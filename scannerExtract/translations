@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+        <file alias="/trans_scannedImageExtractor_de.qm">/home/ruess/Projekte/trunk/buildtest/trans_scannedImageExtractor_de.qm</file>
+        <file alias="/qt_de.qm">/usr/share/qt5/translations/qt_de.qm</file>
+        <file alias="/qtbase_de.qm">/usr/share/qt5/translations/qtbase_de.qm</file>
+        <file alias="/qt_help_de.qm">/usr/share/qt5/translations/qt_help_de.qm</file>
+        <file alias="/qtbase_de.qm">/usr/share/qt5/translations/qtbase_de.qm</file>
+</qresource>
+</RCC>

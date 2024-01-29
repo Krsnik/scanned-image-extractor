@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpDialog</class>
+ <widget class="QDialog" name="HelpDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Scanned Image Extractor Help</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>730</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Find the more detailed online help at &lt;a href=&quot;http://dominik-ruess.de/scannerExtract&quot;&gt;dominik-ruess.de/scannerExtract&lt;/a&gt;</string>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>This is a short introduction on how to use &lt;i&gt;Scanned Image Extractor&lt;/i&gt;. Scroll down to see the complete help text. &lt;br&gt;
+Now, here is an example of how the user interface of the program may look like:</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_overview">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Panel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="text">
+          <string>image</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="margin">
+          <number>25</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>First of all, you load a scanner image. It will appear in the area marked with (1). The program will suggest some photographs. These are marked with a rectangle. Once you select such a rectangle, its preview will apear in the area (2). &lt;br&gt;The properties of these rectangles can be changed in area (3). aspect ratio changes are located in (4) and the orientation of every rectangle/photograph can be changed in (5).</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>&lt;b&gt;Photograph/Rectangle Handling:&lt;/b&gt;
+&lt;br&gt;You can modify the shape of the output photographs/rectangles:&lt;ul&gt;
+&lt;li&gt;drag corner or edge of rectangles for size changes&lt;/li&gt;
+              &lt;li&gt;press CTRL for symmetric change&lt;/li&gt;
+              &lt;li&gt;keep SHIFT pressed before dragging corner, this rotates the rectangle&lt;/li&gt;
+              &lt;li&gt;add new rectangle: deselect all (click somewhere empty). Click on a photograph corner, keep mouse clicked and drag line to a second corner. Then move/resize the new rectangle and click to release.&lt;/li&gt;
+              &lt;/ul&gt;
+If you process to the next scanned image, the previous photographs will be extracted &lt;i&gt;automatically&lt;/i&gt;.</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>&lt;b&gt;Keyboard shortcuts:&lt;/b&gt;&lt;table&gt;
+              &lt;tr&gt;&lt;td&gt;Keys 0-9&lt;/td&gt;&lt;td&gt; select aspect ratios&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;Keys 'a', 's', 'd' and 'f'&lt;/td&gt;&lt;td&gt; change orientation of current target&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td style=&quot;padding-right:20px;&quot;&gt;Keys CTRL+V and CTRL+B&lt;/td&gt;&lt;td&gt; navigate to prev. and next input image&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;Keys N, M and delete&lt;/td&gt;&lt;td&gt; navigate prev. and next target or delete target&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>&amp;OK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>HelpDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>320</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

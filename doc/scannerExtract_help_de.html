@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Scanned Image Extractor</title><link rel="stylesheet" type="text/css" href="scannerExtract.css" /><meta name="generator" content="DocBook XSL Stylesheets V1.78.1" /></head><body><p xmlns=""><a href="../">Back to main page</a>,
+       <a href="scannerExtract_help_en.html" style="margin-left:25px;">English Version</a></p><div class="article"><div class="titlepage"><div><div><h2 class="title"><a id="idp50610432"></a>Scanned Image Extractor</h2></div><div><p class="copyright">Copyright © 2015 Dominik Rueß</p></div><div><div class="legalnotice"><a id="idp50611984"></a><p class="legalnotice-title"><strong>Rechtshinweise</strong></p><p xml:lang="de" lang="de">
+        </p><p>
+          Dieser Artikel ist Bestandteil von <span class="emphasis"><em>Scanned Image Extractor</em></span>.
+          <span class="emphasis"><em>Scanned Image Extractor</em></span> ist freie Software.
+          Sie können es unter den Bedingungen der GNU General Public
+          License, wie von der Free Software Foundation veröffentlicht, 
+          weitergeben und/oder modifizieren, entweder gemäß Version 
+          3 der Lizenz oder (nach Ihrer Option) jeder späteren Version.
+        </p><p xml:lang="de" lang="de">
+        </p><p>
+          Die Veröffentlichung dieses Programms erfolgt in der Hoffnung,
+          daß es Ihnen von Nutzen sein wird,
+          aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie
+          der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN
+          ZWECK.
+          Details finden Sie in der GNU General Public License.
+        </p><p xml:lang="de" lang="de">
+        </p><p>
+          In <a class="xref" href="#gplde" title="6. GNU General Public License">Abschnitt 6, „GNU General Public License“</a> ist ein Verweis auf die Lizenz zu finden,
+          oder alternativ direkt unter
+          <a class="ulink" href="http://www.gnu.org/licenses/" target="_top">http://www.gnu.org/licenses/</a>
+        </p><p xml:lang="de" lang="de">
+      </p></div></div></div><hr /></div><div class="toc"><p><strong>Inhaltsverzeichnis</strong></p><dl class="toc"><dt><span class="sect1"><a href="#preface">1. Vorwort 1: Open Source und unterstützte Platformen</a></span></dt><dt><span class="sect1"><a href="#backup">2. Vorwort 2: Sichern Sie Ihre Daten</a></span></dt><dt><span class="sect1"><a href="#idp48855296">3. Was ist <span class="emphasis"><em>Scanned Image Extractor</em></span> ?</a></span></dt><dd><dl><dt><span class="sect2"><a href="#features">3.1. Liste der Möglichkeiten mit <span class="emphasis"><em>Scanned Image Extractor</em></span></a></span></dt><dt><span class="sect2"><a href="#download">3.2. <span class="emphasis"><em>Scanned Image Extractor</em></span> herunterladen</a></span></dt><dt><span class="sect2"><a href="#reports">3.3. Wo können Sprachschwächen, Programmfehler
+      und Anforderungswünsche verfasst werden ?</a></span></dt><dt><span class="sect2"><a href="#errors">3.4. Was tun, wenn meine Scannerbilder nicht gut erkannt werden?</a></span></dt></dl></dd><dt><span class="sect1"><a href="#usecases">4. Benutzung:</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp53572416">4.1. Installation von <span class="emphasis"><em>Scanned Imaged Extractor</em></span></a></span></dt><dd><dl><dt><span class="sect3"><a href="#idp53575504">4.1.1. Microsoft Windows</a></span></dt><dt><span class="sect3"><a href="#idp53577280">4.1.2. GNU Linux</a></span></dt><dt><span class="sect3"><a href="#idp53584064">4.1.3. Von den Quellen bauen</a></span></dt></dl></dd><dt><span class="sect2"><a href="#idp53588592">4.2. Übersicht des gesamten Album-Scannes</a></span></dt><dt><span class="sect2"><a href="#howto">4.3. Wie Sie <span class="emphasis"><em>Scanned Image Extractor</em></span> benutzen</a></span></dt><dt><span class="sect2"><a href="#tips">4.4. Tipps und Tricks für <span class="emphasis"><em>Scanned Image Extractor</em></span></a></span></dt></dl></dd><dt><span class="sect1"><a href="#idp53641376">5. Weitere Hilfe</a></span></dt><dd><dl><dt><span class="sect2"><a href="#idp53642256">5.1. Hilfe für bestimmte Bedienelemente</a></span></dt><dt><span class="sect2"><a href="#donate">5.2. Spenden an den Autor</a></span></dt></dl></dd><dt><span class="sect1"><a href="#gplde">6. GNU General Public License</a></span></dt></dl></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="preface"></a>1. Vorwort 1: Open Source und unterstützte Platformen</h2></div></div></div><p xml:lang="de" lang="de">
+      Diese Software App is <span class="emphasis"><em>Open Source</em></span>.
+      Das heißt, dass ich nicht extrem viel Zeit und Geld in das Testen und Erwerben von verschiedenen Systemen bzw. Platformen investieren kann.
+      Der Vorteil von Open Source liegt in Freiheit und Offenheit (im Gegensatz zu Kommerzieller Software, Freeware oder Shareware).
+      Manchmal ist Open Source aber nicht ganz kostenlos - der Benutzer hat Kosten in dem Sinne, dass er dem Entwickler Feedback oder Fehlermeldungen zurück gibt.
+    </p><p xml:lang="de" lang="de">
+      Ich habe diese Software für verschiedene Platformen herausgegeben (z.B. Windows, Ubuntu, Fedora).
+      Ich kann das aber nur für Systeme tun, die ich selbst besitze.
+      Wenn eine Platform nicht unterstützt ist, senden Sie mir doch einen Vorschlag.
+      Ich würde auch liebend gerne die Software für <span class="emphasis"><em>Mac OS X</em></span> herausgeben.
+      Leider besitze ich keinen Mac.
+      Wenn Sie hieran interessiert sind, denken Sie über eine Spende nach (<a class="xref" href="#donate" title="5.2. Spenden an den Autor">Abschnitt 5.2, „Spenden an den Autor“</a>),
+      dann kann ich hoffentlich bald einen Mac erwerben und die Software dafür anpassen und vor allem dauerhaft supporten.
+    </p></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="backup"></a>2. Vorwort 2: Sichern Sie Ihre Daten</h2></div></div></div><p xml:lang="de" lang="de">
+      Erstellen Sie immer Sicherungen von Ihren Dateien, auch
+      wenn Sie Scanned Image Extractor benutzen !!!
+    </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p xml:lang="de" lang="de">
+Das reine Scannen von Alben oder Bildern ist sehr zeitaufwändig. Behalten Sie daher am besten eine Kopie der Original-Scannerdaten an einem anderen Ort auf.
+      </p></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp48855296"></a>3. Was ist <span class="emphasis"><em>Scanned Image Extractor</em></span> ?</h2></div></div></div><p xml:lang="de" lang="de">
+      </p><div><img src="images/SIE.png" /></div><p xml:lang="de" lang="de">
+<span class="emphasis"><em>Scanned Image Extractor</em></span> is ein Werkzeug um schnell und effizient rechteckige Fotografien aus Albums- oder (mehreren) Fotografie-Scans zu extrahieren. Das Programm is halb-automatisch und versucht Fotografien zu erkennen. Sie können diese Vorschläge akzeptieren, modifizieren, löschen oder ggf. selbst hinzufügen.
+    </p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="features"></a>3.1. Liste der Möglichkeiten mit <span class="emphasis"><em>Scanned Image Extractor</em></span></h3></div></div></div><p xml:lang="de" lang="de">
+        <span class="emphasis"><em>Scanned Image Extractor</em></span> bietet eine interessante Liste von Eigenschaften
+        und Fähigkeiten.
+        Um ein paar dieser Möglichkeiten beschrieben zu sehen,
+        gehen Sie zu <a class="xref" href="#usecases" title="4. Benutzung:">Abschnitt 4, „Benutzung:“</a>.
+        Mit <span class="emphasis"><em>Scanned Image Extractor</em></span> können Sie:
+        </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+effizient eine oder mehrere Fotografien aus Scannerbildern extrahieren.
+            </p></li><li class="listitem"><p>
+              mit 16 Bit Eingangs- und Ausgangsbildern arbeiten (nützlich, falls Sie danach z.B. noch mit Gimp 2.9+ oder Lightroom arbeiten)
+            </p></li><li class="listitem"><p>
+              automatische Fotografieerkennungen vorgeschlagen bekomen. Falls diese falsch sind, können Sie diese manuell korrigieren, löschen oder neu erstellen.
+            </p></li><li class="listitem"><p>
+Das Seitenverhältnis der extrahierten Fotografien kontrollieren.
+            </p></li><li class="listitem"><p>
+Tastenkürzel für einen noch effizienteren Arbeitsablauf benutzen.
+            </p></li></ul></div><p xml:lang="de" lang="de">
+      </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="download"></a>3.2. <span class="emphasis"><em>Scanned Image Extractor</em></span> herunterladen</h3></div></div></div><p xml:lang="de" lang="de">
+        Gehen Sie zu sourceforge und laden sie die Dateien dort herunter:
+        <a class="ulink" href="https://sourceforge.net/p/scannedimageextractor/" target="_top">sourceforge.net/p/scannedimageextractor/</a> -&gt; 
+        <a class="ulink" href="https://sourceforge.net/p/scannedimageextractor/files/" target="_top">Files</a>. Wählen Sie die aktuelle
+        Version und die passende Datei für Ihr Betriebssystem aus (vor allem für 32/64 Bit Windows).
+      </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="reports"></a>3.3. Wo können Sprachschwächen, Programmfehler
+      und Anforderungswünsche verfasst werden ?</h3></div></div></div><p xml:lang="de" lang="de">
+        Gehen Sie zu sourceforge und verfassen Sie Ihren Beitrag dort.
+        Am besten auf Englisch, dann können Ihnen auch andere Benutzer helfen.
+        Es geht aber auch auf Deutsch:
+        <a class="ulink" href="https://sourceforge.net/p/scannedimageextractor/" target="_top">sourceforge.net/p/scannedimageextractor/</a> -&gt; 
+        <a class="ulink" href="https://sourceforge.net/p/scannedimageextractor/tickets" target="_top">Tickets</a> 
+      </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="errors"></a>3.4. Was tun, wenn meine Scannerbilder nicht gut erkannt werden?</h3></div></div></div><p xml:lang="de" lang="de">
+        Jedes Fotoalbum sieht anders aus.
+        Wenn Sie ein Album haben, von dessen Scans die Fotografien nur schlecht erkannt werden, senden Sie mir ein paar Beispiele (volle Auflösung) an <span class="emphasis"><em>scannerextract at dominik-ruess.de</em></span>.
+        Für eine gute, automatische Erkennung sollten Sie aber immer die Hinweise in <a class="xref" href="#howto" title="4.3. Wie Sie Scanned Image Extractor benutzen">Abschnitt 4.3, „Wie Sie <span class="emphasis"><em>Scanned Image Extractor</em></span> benutzen“</a> und <a class="xref" href="#tips" title="4.4. Tipps und Tricks für Scanned Image Extractor">Abschnitt 4.4, „Tipps und Tricks für <span class="emphasis"><em>Scanned Image Extractor</em></span>“</a> beachten.
+      </p></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="usecases"></a>4. Benutzung:</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp53572416"></a>4.1. Installation von <span class="emphasis"><em>Scanned Imaged Extractor</em></span></h3></div></div></div><p xml:lang="de" lang="de">
+        Laden Sie die neueste Datei für Ihr Betriebssystem von         <a class="ulink" href="https://sourceforge.net/p/scannedimageextractor/files/" target="_top">Scanned Image Extractor Files</a> herunter.
+        Wenn Sie ein 64bit Betriebssystem benutzen (sehr wahrscheinlich heutzutage), dann empfehle ich die 64bit Version von   <span class="emphasis"><em>Scanned Imaged Extractor</em></span>.
+      </p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp53575504"></a>4.1.1. Microsoft Windows</h4></div></div></div><p xml:lang="de" lang="de">
+	  Die Installationsdatei (endet auf win32.exe oder win64.exe) ist selbsteklärend. Laden Sie sie herunter und führen Sie sie aus.
+          Getestet mit Windows 7 (64bit).
+        </p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp53577280"></a>4.1.2. GNU Linux</h4></div></div></div><p xml:lang="de" lang="de">
+          Für Debian-ähnliche Systeme (mit Ubuntu getestet) laden Sie die passende .DEB-Datei herunter.
+          Installieren Sie die Voraussetzungen:
+          <code class="code">
+           sudo apt-get install libqt5core5a libqt5network5 
+                     libqt5gui5 libqt5svg5 libqt5widgets5 liblbfgs0 
+                     libopencv-core2.4 libopencv-highgui2.4 
+                     libopencv-imgproc2.4
+          </code>.
+          Installieren Sie nun  <span class="emphasis"><em>Scanned Imaged Extractor</em></span> mit
+          <code class="code">sudo dpkg -i scannerExtract-x.y.z.deb</code>.
+          Das Programm kann mit <code class="code">scannedImagedExtractor</code> gestartet werden.
+        </p><p xml:lang="de" lang="de">
+          Für RPM-basierte Systeme (mit Fedora getestet) installieren Sie die Vorraussetzungen:
+          <code class="code">sudo dnf install opencv-core  qt5-qtsvg
+          qt5-qtbase liblbfgs
+                     opencv</code>.
+          Installieren Sie nun  <span class="emphasis"><em>Scanned Imaged Extractor</em></span> mittels
+          <code class="code">rpm --install -p scannerExtract-x.y.z.rpm </code>
+          Das Programm kann mit <code class="code">scannedImagedExtractor</code> gestartet werden.
+        </p><p xml:lang="de" lang="de">
+          Getestet mit Ubuntu 14.04, 15.04 und Fedora 22-3 (alle jeweils mit 32 und 64bit).
+        </p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="idp53584064"></a>4.1.3. Von den Quellen bauen</h4></div></div></div><p xml:lang="de" lang="de">
+	Sie benötigen cmake und die Module OpenCV (Version 2.4 or 3), liblbfgs und Qt5.
+	Wenn Sie Version 2 von OpenCV benutzen, dann müssen Sie "-DOPENCV2=1" zur CMAKE-Kommandezeile hinzufügen.
+Wenn Sie zum Beispiel unter Ubuntu bauen wollen, dann so:
+<code class="code">        sudo apt-get install liblbfgs-dev libopencv-dev libqt5svg5-dev 
+             qttools5-dev-tools qttools5-dev qtbase5-dev cmake </code>.
+Nun <span class="emphasis"><em>Scanned Image Extractor</em></span> bauen:
+<code class="code"><div class="literallayout"><p><br />
+                mkdir build<br />
+                cd build<br />
+                cmake path/to/scannerExtract-X.Y.Z/scannerExtract/ -DCMAKE_BUILD_TYPE=release -DOPENCV2=1<br />
+                make<br />
+                (make install)</p></div>
+</code>
+
+	</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp53588592"></a>4.2. Übersicht des gesamten Album-Scannes</h3></div></div></div><p xml:lang="de" lang="de">
+        Dieser Abschnitt illustriert die Benutzung von
+        <span class="emphasis"><em>Scanned Image Extractor</em></span>
+        als kurze Übersicht:
+        </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
+Scannen Sie die Alben mit einer Auflösung von mindestens 300dpi (gerade für ältere Fotografien sollten 600dpi ausreichen).
+Als Dokumenttyp wählen Sie Fotografie/Bilder.
+Der Schritt alle Alben zu scannen wird am längsten dauern.
+Um diesen Teil effizienter zu gestalten, beachten Sie bitte die folgenden Hinweise.
+Weitere Hinweise gibt es in <a class="xref" href="#tips" title="4.4. Tipps und Tricks für Scanned Image Extractor">Abschnitt 4.4, „Tipps und Tricks für <span class="emphasis"><em>Scanned Image Extractor</em></span>“</a>.
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p>
+    Benutzen Sie nicht das Vorschau-System Ihres Scanners. Das benötigt extrem viel Zeit. Scannen Sie einfach den größtmöglichen Bereich.
+  </p></div><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p>
+    Testen Sie den Prozess bevor Sie alle Alben scannen. D.h. probieren Sie alle hier aufgeführten Schritte für ein paar Albenseiten aus, bevor Sie alles einscannen.
+  </p></div><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p>
+    Falls Ihre Fotografien qualitativ noch hochwertig sind und sie die Daten in einem 16-Bit Porgramm weiterverarbeiten möchten (Gimp 2.9+, Lightroom, ...), dann stellen Sie in Ihrer Scanner-Software 16Bit Farbtiefe ein.
+  </p></div><p>
+</p></li><li class="listitem"><p>
+              Nach dem alles eingescannt wurde, benutzen Sie <span class="emphasis"><em>Scanned Image Extractor</em></span> um die Fotografien zu extrahieren (sehen Sie auch unter <a class="xref" href="#howto" title="4.3. Wie Sie Scanned Image Extractor benutzen">Abschnitt 4.3, „Wie Sie <span class="emphasis"><em>Scanned Image Extractor</em></span> benutzen“</a>).
+            </p></li><li class="listitem"><p>
+            Organisieren Sie Ihre Fotografien auf Dateeibene.
+            D.h. erstellen Sie Verzeichnisse, bennen Sie Ihre Dateien passend um, usw.
+            Auch hilft es, mögliche schriftliche Kommentare, in den Alben neben den Bildern, in den Dateinamen einzutragen.
+            Ein Programm wie mein freies <a class="ulink" href="http://dominik-ruess.de/pivot/" target="_top">pivot - photo, image and video organization tool</a> kann Ihnen dabei behilflich sein.
+            </p></li><li class="listitem"><p>
+            Organisieren Sie Ihre Fotografien auf der (Meta-)Datenebene. Verstichworten Sie Ihre Dateien, manipulieren Sie die Farben, usw.
+            Hier können Sie auf freie Programme wie
+              <a class="ulink" href="https://www.digikam.org/" target="_top">digiKam</a> oder kommerzielle Programme wie Lightroom zurückgreifen.
+            </p></li></ol></div><p xml:lang="de" lang="de">
+      </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="howto"></a>4.3. Wie Sie <span class="emphasis"><em>Scanned Image Extractor</em></span> benutzen</h3></div></div></div><p xml:lang="de" lang="de">
+Die Benutzeroberfläche von <span class="emphasis"><em>Scanned Image Extractor</em></span> ist nicht sehr kompliziert.
+Sie besteht aus drei Hauptbereichen. 
+Einer davon stellt das Scan-Bild und die möglichen Fotografien dar (1),
+ein weiterer Bereich stellt die Vorschau dar (2)
+und zuletzt gibt es ein Bereich für schnelle Einstellungen (3), davon am wichtigsten das Seitenverhältnis (4) und die Ausrichtung (5).
+Sehen Sie das beispielhaft auch in <a class="xref" href="#fig_overview" title="Abbildung 1. Scanned Image Extractor Screenshot">Abbildung 1, „<span class="emphasis"><em>Scanned Image Extractor</em></span> Screenshot“</a>.
+      </p><div class="figure"><a id="fig_overview"></a><p class="title"><strong>Abbildung 1. <span class="emphasis"><em>Scanned Image Extractor</em></span> Screenshot</strong></p><div class="figure-contents"><div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="640"><tr><td align="center" valign="center"><img src="images/overview.png" align="middle" width="640" alt="Scanned Image Extractor Screenshot" /></td></tr></table></div></div></div><br class="figure-break" /><p xml:lang="de" lang="de">
+      Starten Sie damit, ein Bild zu laden (Datei-Menü).
+      Wenn Sie alle Bilder bearbeiten wollen, wählen Sie am besten das Erste Bild.
+      Nach einer kurzen Berechnung sehen Sie die Vorschläge der Fotografie-Detektion - in blauen, überlargerten Rechtecken.
+      Diese Rechtecke werden bei der Speicherung aus den Scandaten extrahiert und in das Zielverzeichnis gespeichert (siehe auch "einstellungen" im Menü).
+      Sobald Sie mit dem aktuellen Bild fertig sind, klicken Sie zum nächsten Bild.
+      Die Ausgangsbilder des vorherigen Bildes werden automatisch gespeichert - Sie müssen also nicht jedesmal auf "Speichern" klicken.
+      </p><p xml:lang="de" lang="de">
+      Drücken Sie die Tasten 1-9 und 0 um ein bestimmtes Seitenverhältnis zu erzwingen.
+      </p><p xml:lang="de" lang="de">
+      Drücken Sie die Tasten "a", "s", "d" oder "f" um schnell die Ausrichtung des akt. Ausgangsbildes zu ändern.
+      </p><p xml:lang="de" lang="de">
+      Wenn die aktuellen Detektionen falsch sind, können Sie sie manipulieren, löschen oder manuell hinzufügen
+      Wenn Sie bei einem ausgewählten Rechteck die Ecken oder Kanten ziehen, wird dieses entsprechend vergrößert.
+      Halten Sie die STRG-Taste dabei gedrückt, findet das Ganze symmetrisch statt.
+      Halten Sie die Umschalt-Taste gedrückt bevor Sie auf eine Ecke klicken - dann können Sie das Rechteck drehen.
+      Um ein neues Rechteck hinzuzufügen, wählen Sie alle Rechtecke ab (irgendwo ins Leere klicken) und klicken Sie auf eine Ecke der gewünschten Fotografie.
+      Danach halten Sie die Maus gedrückt und ziehen Sie den roten Balken entlang zu einer zweiten Ecke (über die Lange Seite ist es genauer).
+      Lassen Sie los, nun können Sie das neue Rechteck in der Größe verändern.
+      Nach einem letzten Klick ist das neue Rechteck fertig und Sie haben ein Kopierziel hinzugefügt.
+      </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="tips"></a>4.4. Tipps und Tricks für <span class="emphasis"><em>Scanned Image Extractor</em></span></h3></div></div></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p xml:lang="de" lang="de">
+    Die meisten Alben haben ein Format, dass nicht komplett auf einen Scanner passt.
+    Scannen Sie eine Albenseite in zwei Schritten:
+    Richten Sie die obere linke Ecke an Ihrem Scanner aus und drehen Sie danach die Seite um die untere-rechte (dann neue obere linke) Ecke nochmals an Ihrem Scanner auszurichten und ebenfalls zu scannen.
+    In den meisten Fällen sichert diese Methode, dass Ihre Fotografien in mindestens einem der beiden Scans enthalten sind.
+    Sie können die Klappe auch auflassen, das spart Zeit.
+  </p><div class="figure"><a id="fig_page_Format"></a><p class="title"><strong>Abbildung 2. <span class="emphasis"><em>Scanned Image Extractor</em></span> Platzierung von Alben</strong></p><div class="figure-contents"><div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="640"><tr><td align="center" valign="center"><img src="images/scannerpos.png" align="middle" width="640" alt="Scanned Image Extractor Platzierung von Alben" /></td></tr></table></div></div></div><br class="figure-break" /></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p xml:lang="de" lang="de">
+      ICH ÜBERNEHME KEINERLEI HAFTUNG FÜR BESCHÄDIGUNGEN IHRES SCANNERS.
+      Wenden Sie folgenden Hinweis also nur auf eigene Verantwortung an:
+      Wenn Sie mit Ihrer Hand auf den Albenrücken drücken, werden die Bilder etwas besser angepresst und sind weniger gewölbt.
+      (see also <a class="xref" href="#fig_page_Format" title="Abbildung 2. Scanned Image Extractor Platzierung von Alben">Abbildung 2, „<span class="emphasis"><em>Scanned Image Extractor</em></span> Platzierung von Alben“</a>)
+      </p></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p xml:lang="de" lang="de">
+  Wenn Sie mehrere Einzelbilder (d.h. ohne Album) einscannen wollen, platzieren Sie sie nicht direkt an den Rand des Scanners.
+  Lassen Sie Platz, zum Rand und zu den anderen Bildern.
+  Dies reduziert das Risiko von Verschiebungen über den Rand des Scanners hinaus.
+  Außerdem erleichtern Sie der automatischen Erkennung von Fotografien die Arbeit.
+</p><div class="figure"><a id="fig_multiphoto"></a><p class="title"><strong>Abbildung 3. <span class="emphasis"><em>Scanned Image Extractor</em></span> Mehrere Fotografien</strong></p><div class="figure-contents"><div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="640"><tr><td align="center" valign="center"><img src="images/multiplace.png" align="middle" width="640" alt="Scanned Image Extractor Mehrere Fotografien" /></td></tr></table></div></div></div><br class="figure-break" /></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p xml:lang="de" lang="de">
+    Versuchen Sie immer das Seitenverhältnis zu erzwingen, mit so wenig wie nötigen Seitenverhältnisse.
+    Für den Betrachter der Ergebnisse ist das eine deutlich angenehmere Erfahrung.
+      </p></div></div></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp53641376"></a>5. Weitere Hilfe</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="idp53642256"></a>5.1. Hilfe für bestimmte Bedienelemente</h3></div></div></div><p xml:lang="de" lang="de">
+        Wenn bestimmte Bedienelemente der Anwendung nicht klar sind,
+        halten Sie ihren Mauszeiger über diesem Element.
+        In der Statusanzeige wird dann eine Hilfe angezeigt.
+      </p><p xml:lang="de" lang="de">
+        Auch können Sie in den Hilfe-Modus gehen, indem Sie auf das
+        Fragezeichen Symbol klicken und danach auf das unbekannte
+        Bedienelement.
+      </p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="donate"></a>5.2. Spenden an den Autor</h3></div></div></div><p xml:lang="de" lang="de">
+        Wenn Ihnen diese Anwendung gefällt, Sie danke schön sagen wollen oder Sie
+        einfach die weitere Entwicklung der Anwendung unterstützen möchten,
+        überlegen Sie sich zu spenden.
+        Sie können das direkt über "sourceforge donation page",
+        <a class="ulink" href="https://sourceforge.net/p/scannedimageextractor/donate" target="_top">https://sourceforge.net/p/scannedimageextractor/donate</a>,
+        erledigen, oder schreiben Sie eine E-Mail an <span class="emphasis"><em>donate at dominik-ruess.de</em></span>.
+        Vielen Dank.
+      </p></div></div><div xml:lang="de" class="sect1" lang="de"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="gplde"></a>6. GNU General Public License</h2></div></div></div><p>Den offiziellen englischen Originaltext finden Sie unter
+    <a class="ulink" href="http://www.gnu.org/licenses/gpl.html" target="_top">http://www.gnu.org/licenses/gpl.html</a>.
+    Eine Kopie der Version 3 der Lizenz ist in den Quelldateien enthalten.
+    </p></div></div></body></html>

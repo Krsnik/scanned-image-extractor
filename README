@@ -1,0 +1,81 @@
+/***********************************************************************
+ * This file is part of Scanned Image Extractor.
+ *
+ * Scanned Image Extractor is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Scanned Image Extractor is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Scanned Image Extractor.  If not, see <http://www.gnu.org/licenses/>
+ *
+ *
+ * Copyright (C) 2015, Dominik Rueß; info@dominik-ruess.de
+ **********************************************************************/
+
+Homepage of Scanned Image Extractor: 
+http://dominik-ruess.de/scannerExtract/
+
+#######################################################################
+#  Content:                                                           #
+#######################################################################
+
+1. How to install binaries on different systems
+2. How to compile on unix systems
+
+#######################################################################
+#  Installing Binaries:                                               #
+#######################################################################
+
+WINDOWS:  download the binaries and install. 
+          There are no dependencies for the installation binary
+          tested with Windows 7
+
+Linux-DEB:
+        tested Ubuntu 15.04 with and Ubuntu 14.04 LTS
+        1. Pre-requisites:
+                sudo apt-get install libqt5core5a libqt5network5 \
+                     libqt5gui5 libqt5svg5 libqt5widgets5 liblbfgs0 \
+                     libopencv-core2.4 libopencv-highgui2.4 \
+                     libopencv-imgproc2.4
+        2. install debian package:
+                sudo dpkg -i scannerExtract-x.y.z.deb
+
+Linux-RPM:
+        tested with Fedora 22
+        1. Pre-requisites, adapt to your architecture here:
+                sudo dnf install opencv-core.x86_64  qt5-qtsvg.x86_64 \
+                     qt5-qtbase.x86_64 liblbfgs-devel.x86_64 \
+                     opencv.x86_64
+        2. install RPM package:
+                rpm --install -p scannerExtract-x.y.z.rpm                
+
+#######################################################################
+#  Compile on unix systems:                                           #
+#######################################################################
+
+Tested with Ubuntu 15.04
+
+1. pre-requisites
+        sudo apt-get install liblbfgs-dev libopencv-dev libqt5svg5-dev \
+             qttools5-dev-tools qttools5-dev qtbase5-dev cmake 
+
+2. build (tested on Ubuntu 15.04)
+        - commands:
+                mkdir build
+                cd build
+                cmake path/to/scannerExtract-X.Y.Z/scannerExtract/ \
+                      -DCMAKE_BUILD_TYPE=release -DOPENCV2=1
+                make
+                (make install)
+        - note: if you use OpenCV2 (e.g. Ubuntu 15.04) then add 
+          -DOPENCV2=1 to your cmake call
+
+3. run
+        "./scannedImageExtractor" or if installed "scannedImageExtractor"
+

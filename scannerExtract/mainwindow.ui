@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1167</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Scanned Image:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_filename">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGraphicsView" name="graphicsView_Source">
+          <property name="toolTip">
+           <string>The input image view. Zoom in/out (also use mousewheel). Create new output image by start ing to drag. Manipulate output images by dragging on their borders or corners (with SHIFT+drag it is rotating).</string>
+          </property>
+          <property name="statusTip">
+           <string>The input image view. Zoom in/out (also use mousewheel). Create new output image by start ing to drag. Manipulate output images by dragging on their borders or corners (with SHIFT+drag it is rotating).</string>
+          </property>
+          <property name="whatsThis">
+           <string>The input image view. Zoom in/out (also use mousewheel). Create new output image by start ing to drag. Manipulate output images by dragging on their borders or corners (with SHIFT+drag it is rotating).</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_zoomIn">
+            <property name="toolTip">
+             <string>Zoom in</string>
+            </property>
+            <property name="statusTip">
+             <string>Zoom in</string>
+            </property>
+            <property name="whatsThis">
+             <string>Zoom in</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/View-zoom-in.svg</normaloff>:/images/View-zoom-in.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_zoomOut">
+            <property name="toolTip">
+             <string>Zoom out</string>
+            </property>
+            <property name="statusTip">
+             <string>Zoom out</string>
+            </property>
+            <property name="whatsThis">
+             <string>Zoom out</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/View-zoom-out.svg</normaloff>:/images/View-zoom-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_zoomOriginal">
+            <property name="toolTip">
+             <string>Zoom to scale 1:1</string>
+            </property>
+            <property name="statusTip">
+             <string>Zoom to scale 1:1</string>
+            </property>
+            <property name="whatsThis">
+             <string>Zoom to scale 1:1</string>
+            </property>
+            <property name="text">
+             <string>1:1</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/View-zoom-1.svg</normaloff>:/images/View-zoom-1.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_zoomFit">
+            <property name="toolTip">
+             <string>Zoom fit</string>
+            </property>
+            <property name="statusTip">
+             <string>Zoom fit</string>
+            </property>
+            <property name="whatsThis">
+             <string>Zoom fit</string>
+            </property>
+            <property name="text">
+             <string>fit</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/View-zoom-fit.svg</normaloff>:/images/View-zoom-fit.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_firstImage">
+            <property name="toolTip">
+             <string>Go to first file in the current directory</string>
+            </property>
+            <property name="statusTip">
+             <string>Go to first file in the current directory</string>
+            </property>
+            <property name="whatsThis">
+             <string>Go to first file in the current directory</string>
+            </property>
+            <property name="text">
+             <string>|&lt;</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Media-skip-backward.svg</normaloff>:/images/Media-skip-backward.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_prevImage">
+            <property name="toolTip">
+             <string>Go to previous file in the current directory</string>
+            </property>
+            <property name="statusTip">
+             <string>Go to previous file in the current directory</string>
+            </property>
+            <property name="whatsThis">
+             <string>Go to previous file in the current directory</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Media-seek-backward.svg</normaloff>:/images/Media-seek-backward.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string>Ctrl+V</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_imagePosition">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_nextImage">
+            <property name="toolTip">
+             <string>Go to next file in the current directory (CTRL+B)</string>
+            </property>
+            <property name="statusTip">
+             <string>Go to next file in the current directory (CTRL+B)</string>
+            </property>
+            <property name="whatsThis">
+             <string>Go to next file in the current directory (CTRL+B)</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Media-seek-forward.svg</normaloff>:/images/Media-seek-forward.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string>Ctrl+B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_lastImage">
+            <property name="toolTip">
+             <string>Go to last file in the current directory</string>
+            </property>
+            <property name="statusTip">
+             <string>Go to last file in the current directory</string>
+            </property>
+            <property name="whatsThis">
+             <string>Go to last file in the current directory</string>
+            </property>
+            <property name="text">
+             <string>&gt;|</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Media-skip-forward.svg</normaloff>:/images/Media-skip-forward.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_saveTargtes">
+            <property name="toolTip">
+             <string>Save all output images for current input image (green=has already been saved)</string>
+            </property>
+            <property name="statusTip">
+             <string>Save all output images for current input image (green=has already been saved)</string>
+            </property>
+            <property name="whatsThis">
+             <string>Save all output images for current input image (green=has already been saved)</string>
+            </property>
+            <property name="text">
+             <string>save</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Document-save.svg</normaloff>:/images/Document-save.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string>Ctrl+S</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_refresh">
+            <property name="text">
+             <string>...</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Refresh_file.svg</normaloff>:/images/Refresh_file.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBox_aspect">
+          <property name="toolTip">
+           <string>Set aspect options for extracted images</string>
+          </property>
+          <property name="title">
+           <string>Aspect Ratio</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>1</number>
+           </property>
+           <item row="0" column="12">
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="2">
+            <widget class="QRadioButton" name="radioButton_1_1">
+             <property name="toolTip">
+              <string>Set aspect of output images to 1:1 (1)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 1:1 (1)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 1:1 (1)</string>
+             </property>
+             <property name="text">
+              <string>1:1</string>
+             </property>
+             <property name="shortcut">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QRadioButton" name="radioButton_5_4">
+             <property name="toolTip">
+              <string>Set aspect of output images to 5:4 (8)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 5:4 (8)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 5:4 (8)</string>
+             </property>
+             <property name="text">
+              <string>5:4</string>
+             </property>
+             <property name="shortcut">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QRadioButton" name="radioButton_3_2">
+             <property name="toolTip">
+              <string>Set aspect of output images to 3:2 (2)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 3:2 (2)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 3:2 (2)</string>
+             </property>
+             <property name="text">
+              <string>3:2</string>
+             </property>
+             <property name="shortcut">
+              <string>2</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QRadioButton" name="radioButton_2_1">
+             <property name="toolTip">
+              <string>Set aspect of output images to 2:1 (4)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 2:1 (4)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 2:1 (4)</string>
+             </property>
+             <property name="text">
+              <string>2:1</string>
+             </property>
+             <property name="shortcut">
+              <string>4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="10">
+            <widget class="QRadioButton" name="radioButton_4_1">
+             <property name="toolTip">
+              <string>Set aspect of output images to 4:1 (6)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 4:1 (6)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 4:1 (6)</string>
+             </property>
+             <property name="text">
+              <string>4:1</string>
+             </property>
+             <property name="shortcut">
+              <string>6</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QRadioButton" name="radioButton_5_3">
+             <property name="toolTip">
+              <string>Set aspect of output images to 5:3 (7)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 5:3 (7)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 5:3 (7)</string>
+             </property>
+             <property name="text">
+              <string>5:3</string>
+             </property>
+             <property name="shortcut">
+              <string>7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="8">
+            <widget class="QRadioButton" name="radioButton_manual">
+             <property name="toolTip">
+              <string>Set aspect of output images to manual (0)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to manual (0)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to manual (0)</string>
+             </property>
+             <property name="text">
+              <string>Manual</string>
+             </property>
+             <property name="shortcut">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QRadioButton" name="radioButton_4_3">
+             <property name="toolTip">
+              <string>Set aspect of output images to 4:3 (3)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 4:3 (3)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 4:3 (3)</string>
+             </property>
+             <property name="text">
+              <string>4:3</string>
+             </property>
+             <property name="shortcut">
+              <string>3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="10" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_aspectRatio">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QRadioButton" name="radioButton_16_9">
+             <property name="toolTip">
+              <string>Set aspect of output images to 16:9 (9)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 16:9 (9)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 16:9 (9)</string>
+             </property>
+             <property name="text">
+              <string>16:9</string>
+             </property>
+             <property name="shortcut">
+              <string>9</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8">
+            <widget class="QRadioButton" name="radioButton_3_1">
+             <property name="toolTip">
+              <string>Set aspect of output images to 3:1 (5)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to 3:1 (5)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to 3:1 (5)</string>
+             </property>
+             <property name="text">
+              <string>3:1</string>
+             </property>
+             <property name="shortcut">
+              <string>5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="6">
+            <widget class="QRadioButton" name="radioButton_free">
+             <property name="toolTip">
+              <string>Set aspect of output images to free or unconstrained (CTRL+-)</string>
+             </property>
+             <property name="statusTip">
+              <string>Set aspect of output images to free or unconstrained (CTRL+-)</string>
+             </property>
+             <property name="whatsThis">
+              <string>Set aspect of output images to free or unconstrained (CTRL+-)</string>
+             </property>
+             <property name="text">
+              <string>Free</string>
+             </property>
+             <property name="shortcut">
+              <string>Ctrl+-</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2" colspan="7">
+            <widget class="QCheckBox" name="checkBox_enforceAspect">
+             <property name="text">
+              <string>enforce this ratio in next unprocessed image</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_orientation">
+          <property name="title">
+           <string>Orientation of Output</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>0</number>
+           </property>
+           <item row="1" column="0">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="QRadioButton" name="radioButton_rot0">
+             <property name="toolTip">
+              <string>the output orientation change is none (A)</string>
+             </property>
+             <property name="statusTip">
+              <string>the output orientation change is none (A)</string>
+             </property>
+             <property name="whatsThis">
+              <string>the output orientation change is none (A)</string>
+             </property>
+             <property name="text">
+              <string>0° </string>
+             </property>
+             <property name="shortcut">
+              <string>A</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QRadioButton" name="radioButton_rot180">
+             <property name="toolTip">
+              <string>the output orientation change is 180°  (upside down) - (KEY D)</string>
+             </property>
+             <property name="statusTip">
+              <string>the output orientation change is 180°  (upside down) - (KEY D)</string>
+             </property>
+             <property name="whatsThis">
+              <string>the output orientation change is 180°  (upside down) - (KEY D)</string>
+             </property>
+             <property name="text">
+              <string>180° </string>
+             </property>
+             <property name="shortcut">
+              <string>D</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QRadioButton" name="radioButton_rot90">
+             <property name="toolTip">
+              <string>the output orientation change is 90°  (rotate right) - (KEY S)</string>
+             </property>
+             <property name="statusTip">
+              <string>the output orientation change is 90°  (rotate right) - (KEY S)</string>
+             </property>
+             <property name="whatsThis">
+              <string>the output orientation change is 90°  (rotate right) - (KEY S)</string>
+             </property>
+             <property name="text">
+              <string>90° </string>
+             </property>
+             <property name="shortcut">
+              <string>S</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QRadioButton" name="radioButton_rot270">
+             <property name="toolTip">
+              <string>the output orientation change is 180°  (rotate left) - (KEY F)</string>
+             </property>
+             <property name="statusTip">
+              <string>the output orientation change is 180°  (rotate left) - (KEY F)</string>
+             </property>
+             <property name="whatsThis">
+              <string>the output orientation change is 180°  (rotate left) - (KEY F)</string>
+             </property>
+             <property name="text">
+              <string>270° </string>
+             </property>
+             <property name="shortcut">
+              <string>F</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Misc</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>3</number>
+           </property>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="6">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_crop">
+             <property name="toolTip">
+              <string>detected images will be cropped by this size</string>
+             </property>
+             <property name="statusTip">
+              <string>detected images will be cropped by this size</string>
+             </property>
+             <property name="whatsThis">
+              <string>detected images will be cropped by this size</string>
+             </property>
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>99.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>1.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>1.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_cropInitial">
+             <property name="toolTip">
+              <string>This crop is applied to all new targets. Individual target crops can be adapted by selecting it and change &quot;current&quot;</string>
+             </property>
+             <property name="statusTip">
+              <string>This crop is applied to all new targets. Individual target crops can be adapted by selecting it and change &quot;current&quot;</string>
+             </property>
+             <property name="whatsThis">
+              <string>This crop is applied to all new targets. Individual target crops can be adapted by selecting it and change &quot;current&quot;</string>
+             </property>
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>99.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>2.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" colspan="2">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Crop border (%), initial:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>current:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QToolButton" name="toolButton_Help">
+             <property name="font">
+              <font>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>After clicking on this button, click on any element to get some short help about it</string>
+             </property>
+             <property name="statusTip">
+              <string>After clicking on this button, click on any element to get some short help about it</string>
+             </property>
+             <property name="whatsThis">
+              <string>After clicking on this button, click on any element to get some short help about it</string>
+             </property>
+             <property name="text">
+              <string>?</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Selected Output Image (Preview):&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGraphicsView" name="graphicsView_Target">
+          <property name="toolTip">
+           <string>This is the preview area for the currently selected output image</string>
+          </property>
+          <property name="statusTip">
+           <string>This is the preview area for the currently selected output image</string>
+          </property>
+          <property name="whatsThis">
+           <string>This is the preview area for the currently selected output image</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_prevItem">
+            <property name="toolTip">
+             <string>Go to previous output image within the current input</string>
+            </property>
+            <property name="statusTip">
+             <string>Go to previous output image within the current input</string>
+            </property>
+            <property name="whatsThis">
+             <string>Go to previous output image within the current input</string>
+            </property>
+            <property name="text">
+             <string>&amp;prev. Item</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Media-seek-backward.svg</normaloff>:/images/Media-seek-backward.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string>N</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_targetPosition">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_nextItem">
+            <property name="toolTip">
+             <string>Go to next output image within the current input (M)</string>
+            </property>
+            <property name="statusTip">
+             <string>Go to next output image within the current input (M)</string>
+            </property>
+            <property name="whatsThis">
+             <string>Go to next output image within the current input (M)</string>
+            </property>
+            <property name="text">
+             <string>&amp;next Item</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Media-seek-forward.svg</normaloff>:/images/Media-seek-forward.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string>M</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="toolButton_deleteItem">
+            <property name="toolTip">
+             <string>remove the current output image (will not be saved to hard drive)</string>
+            </property>
+            <property name="statusTip">
+             <string>remove the current output image (will not be saved to hard drive)</string>
+            </property>
+            <property name="whatsThis">
+             <string>remove the current output image (will not be saved to hard drive)</string>
+            </property>
+            <property name="text">
+             <string>&amp;delete Item</string>
+            </property>
+            <property name="icon">
+             <iconset resource="scannerIcons.qrc">
+              <normaloff>:/images/Edit-delete.svg</normaloff>:/images/Edit-delete.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1167</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionLoad_Directory"/>
+    <addaction name="separator"/>
+    <addaction name="action_Settings"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionOnline_Help"/>
+    <addaction name="separator"/>
+    <addaction name="action_About"/>
+    <addaction name="actionAbout_liblbfgs"/>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="actionAbout_Open_CV"/>
+    <addaction name="separator"/>
+    <addaction name="actionSupport_by_donation"/>
+    <addaction name="actionCheck_for_new_version"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_Directory">
+   <property name="text">
+    <string>&amp;Load File</string>
+   </property>
+   <property name="statusTip">
+    <string>Load an input image, which usually is a scanned image from an album</string>
+   </property>
+   <property name="whatsThis">
+    <string>Load an input image, which usually is a scanned image from an album</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_Set_Target_Dir">
+   <property name="text">
+    <string>Set &amp;Target Directory</string>
+   </property>
+   <property name="iconText">
+    <string>Set Output Directory</string>
+   </property>
+   <property name="toolTip">
+    <string>Set Output Directory</string>
+   </property>
+   <property name="statusTip">
+    <string>Set the directory where the extracted files will be written to</string>
+   </property>
+   <property name="whatsThis">
+    <string>Set the directory where the extracted files will be written to</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Close the program</string>
+   </property>
+   <property name="whatsThis">
+    <string>Close the program</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About &amp;Qt</string>
+   </property>
+  </action>
+  <action name="actionOnline_Help">
+   <property name="text">
+    <string>&amp;Help</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionSupport_by_donation">
+   <property name="text">
+    <string>Support by donation</string>
+   </property>
+  </action>
+  <action name="actionCheck_for_new_version">
+   <property name="text">
+    <string>Check for new version</string>
+   </property>
+  </action>
+  <action name="action_Settings">
+   <property name="text">
+    <string>&amp;Settings</string>
+   </property>
+  </action>
+  <action name="actionAbout_liblbfgs">
+   <property name="text">
+    <string>About liblbfgs</string>
+   </property>
+  </action>
+  <action name="actionAbout_Open_CV">
+   <property name="text">
+    <string>About Open&amp;CV</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="scannerIcons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

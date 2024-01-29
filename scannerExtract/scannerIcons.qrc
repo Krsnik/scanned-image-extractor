@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/sizeChange.png</file>
+        <file>images/rotate.png</file>
+        <file>images/Media-seek-backward.svg</file>
+        <file>images/Media-seek-forward.svg</file>
+        <file>images/Media-skip-backward.svg</file>
+        <file>images/Media-skip-forward.svg</file>
+        <file>images/View-zoom-1.svg</file>
+        <file>images/View-zoom-fit.svg</file>
+        <file>images/View-zoom-in.svg</file>
+        <file>images/View-zoom-out.svg</file>
+        <file>images/Document-save.svg</file>
+        <file>images/Edit-delete.svg</file>
+        <file>images/Gnome-scanner.svg</file>
+        <file>images/Gnome-image-x-generic.svg</file>
+        <file>images/logo.svg</file>
+        <file alias="WARRANTY_EN">WARRANTY</file>
+        <file>images/Gnome-image-x-generic_rot.svg</file>
+        <file>images/Refresh_file.svg</file>
+        <file>WARRANTY_DE</file>
+        <file>images/overview.png</file>
+    </qresource>
+</RCC>

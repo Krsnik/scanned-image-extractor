@@ -1,0 +1,51 @@
+################################################################################
+2015-09-26; by Dominik Rueﬂ
+
+- removed a bug which prevented saving on clicking on the save button
+
+- disabled disabling of saving button (user can choose to overwrite)
+
+################################################################################
+2015-09-25; by Dominik Rueﬂ
+
+- removed a bug which caused an application crash on loading images
+
+- added successful saving information text on status bar
+
+- removed a bug which caused backslashes in filepath to not save files
+
+- removed a bug which caused an exception on exiting the program
+
+- removed a bug which prevented saving when non existing directory was specified
+
+- added "uninstall before install" which tries to uninstall old versions
+
+- removed some fixed paths and settings for cmake
+
+- added bit information (i.e. 32/64) to about dialog
+
+
+################################################################################
+2015-08; by Dominik Rueﬂ
+
+- added mutex to decrease maximum memory consumption
+  (useful for the 32bit vresions)
+
+- added online documentation to docs folder
+
+- A new selection can now also be created by clicking twice
+  (used to be only by dragging)
+
+- faster extraction of preview in previously bloccking situations
+
+- made some changes to the online documentation, i.e. howto install
+
+- added the online documentation to the source package
+
+- fixed a bug which would not reload already seen 16bit images
+
+- fixed a bug which caused the application to crash on closing it
+
+################################################################################
+2015-08; by Dominik Rueﬂ
+First release
