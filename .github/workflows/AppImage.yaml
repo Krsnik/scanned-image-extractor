@@ -3,9 +3,11 @@ name: AppImage for Release
 
 on:
   push:
-    # Sequence of patterns matched against refs/tags
     tags:
-    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+      - "v*.*.*"
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -21,10 +23,10 @@ jobs:
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: build
+      - name: Build AppImage
         run: "nix build .#appImage"
 
-      - name: Release with Notes
+      - name: Release
         uses: softprops/action-gh-release@v1
         with:
           files: ./result/*.AppImage
