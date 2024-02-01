@@ -1,0 +1,32 @@
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: AppImage for Release
+
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+jobs:
+  build:
+    name: Upload Release Asset
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Nix
+        uses: cachix/install-nix-action@v22
+        with:
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: build
+        run: "nix build .#appImage"
+
+      - name: Release with Notes
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./result/*.AppImage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
