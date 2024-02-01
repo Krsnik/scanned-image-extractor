@@ -1,13 +1,81 @@
 # Scanner Image Extractor
 
-This is a fork of [Scanner Image Extractor](http://www.dominik-ruess.de/scannerExtract).
+![Logo](./doc/images/SIE.png)
 
-It uses the nix build system and slight modification to the code to make it compile.
-This flake also bundles the program into a self-contained AppImage to be run anywhere.
+This is a fork of [Scanner Image Extractor](http://www.dominik-ruess.de/scannerExtract) by [Dominik Rueß](http://www.dominik-ruess.de).
 
-# Original README
+The original code would not run with modern libraries and g++ versions.
+Thus, this repo uses the `nix` build system to easily and reproducibly build and package the software into a static AppImage to hopefully make it more accessible to modern systems.
 
+## Documentation
 
+[Full Documentation EN](http://www.dominik-ruess.de/scannerExtract/)
+
+[Full Documentation DE](http://www.dominik-ruess.de/scannerExtract/scannerExtract_help_de.html)
+
+These websites are also included in this repository in the `doc` directory.
+
+### Features
+
+Scanned Image Extractor comes with an interesting list of features.
+With Scanned Image Extractor, you can:
+
+* efficiently extract one or more photographs per scanner image.
+* work on 16bit input images and have 16bit output images (useful e.g. for Gimp 2.9+ or Lightroom users).
+* have detections presented from automated photograph detection. If these detections are wrong, correct, delete or add them, manually.
+* constrain aspect ratios of output photographs
+* use keyboard shortcuts for an even more efficient work flow 
+
+### How to
+
+The user interface of Scanned Image Extractor is not very sophisticated. It consists of three main areas, one displaying the scanned image (1), one for the preview of the current photograph (2) and lastly, one area for the extraction settings (3), most importantly for the aspect ratio (4) and orientation (5) control.
+Refer to Figure 1, “Scanned Image Extractor Screenshot” for a screenshot.
+
+![Overview](./doc/images/overview.png)
+
+Start by loading a scanner image (File menu).
+If you want to process all, just choose the first scanned image in your directory.
+Now, after some computation, the detected photographs are suggested as blue boxes in the input image.
+These blue boxes will be extracted to a specified directory (see settings) as digital photograph.
+When your done with the current scanned image, proceed to the next one by clicking on the respective button.
+The output images of the last image will then be processed automatically, there's no need to press the "save" button every time.
+
+Press the keys 1-9 and 0 to enforce a certain aspect ratio for the current target.
+
+Press the keys "a", "s", "d" or "f" for fastly changing the orientation of the current target selection.
+
+If you dislike the current detection(s) you can manipulate, delete or manually add them yourself.
+Go to any edge or corner to change the size of the selected target.
+If you press CTRL while dragging, this will be symmetric.
+If you press SHIFT and then drag a corner of the selected rectangle, you can rotate it by dragging.
+For adding a new selection, deselect all (click somewhere empty) and click at a corner of the photograph.
+Keep the mouse pressed and drag the red line to another corner and release the mouse.
+Now you have a new rectangle which you can resize by moving your mouse.
+Click to have a new target rectangle.
+
+## Building
+
+Currently supported platforms:
+
+* `x86_64-linux`
+
+Install the `nix` package manager and run:
+
+```txt
+nix build .#
+```
+
+or
+
+```txt
+nix build .#appImage
+```
+
+to build a statically linked AppImage.
+
+## Original README
+
+```txt
 /***********************************************************************
  * This file is part of Scanned Image Extractor.
  *
@@ -89,3 +157,4 @@ Tested with Ubuntu 15.04
 3. run
         "./scannedImageExtractor" or if installed "scannedImageExtractor"
 
+```
