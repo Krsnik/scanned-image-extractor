@@ -35,14 +35,14 @@
 
           nativeBuildInputs = with pkgs; [
             cmake
-            opencv2
+            opencv3
             liblbfgs
             qt5.full
             libsForQt5.qt5.wrapQtAppsHook
           ];
 
           configurePhase = ''
-            cmake scannerExtract -DCMAKE_BUILD_TYPE=release -DOPENCV2=1
+            cmake scannerExtract -DCMAKE_BUILD_TYPE=release
           '';
 
           buildPhase = ''
@@ -90,7 +90,7 @@
       default = pkgs.mkShellNoCC {
         packages = with pkgs; [
           cmake
-          opencv2
+          opencv3
           liblbfgs
           gt5.full
 

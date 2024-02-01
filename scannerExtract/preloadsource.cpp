@@ -194,14 +194,20 @@ void PreloadSource::getSumOfRectangleSampling(const QVector<cv::Point2f> pts,
     sumValues = 0;
     numPixels = 0;
 
-    IplImage tmp = image;
+    IplImage tmp = cvIplImage(image);
     assert(image.type() == CV_8U);
 
     for (int i=0; i<4; i++)
     {
 
         CvLineIterator iterator;
-        const int count = cvInitLineIterator( &tmp, pts[i], pts[(i+1)%4], &iterator, 4);
+        const int count = cvInitLineIterator(
+            &tmp,
+            cvPoint(cvRound(pts[i].x), cvRound(pts[i].y)),
+            cvPoint(cvRound(pts[(i + 1) % 4].x), cvRound(pts[(i + 1) % 4].y)),
+            &iterator,
+            4
+        );
 
         for( int j = 0; j < count; j++ ){
             sumValues += iterator.ptr[0];
