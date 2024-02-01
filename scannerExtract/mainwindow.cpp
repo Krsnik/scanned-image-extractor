@@ -774,7 +774,7 @@ void MainWindow::noRotation()
     {
         QObject* item = i.next();
         QRadioButton* b = dynamic_cast<QRadioButton*>( item );
-        if (b > 0 && b->isChecked()) {
+        if (b != 0 && b->isChecked()) {
             b->setAutoExclusive(false);
             b->setChecked(false);
             b->setAutoExclusive(true);
@@ -788,7 +788,7 @@ void MainWindow::noAspect()
     while (i.hasNext())
     {
         QRadioButton* b = dynamic_cast<QRadioButton*>( i.next());
-        if (b > 0 && b->isChecked()) {
+        if (b != 0 && b->isChecked()) {
             b->setAutoExclusive(false);
             b->setChecked(false);
             b->setAutoExclusive(true);

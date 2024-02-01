@@ -1,5 +1,5 @@
 #include <QLocale>
-#include <QForeachContainer>
+// #include <QForeachContainer>
 #include <QDebug>
 #include <QStringList>
 

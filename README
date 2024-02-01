@@ -1,3 +1,13 @@
+# Scanner Image Extractor
+
+This is a fork of [Scanner Image Extractor](http://www.dominik-ruess.de/scannerExtract).
+
+It uses the nix build system and slight modification to the code to make it compile.
+This flake also bundles the program into a self-contained AppImage to be run anywhere.
+
+# Original README
+
+
 /***********************************************************************
  * This file is part of Scanned Image Extractor.
  *
