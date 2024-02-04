@@ -15,6 +15,7 @@
     pkgs = nixpkgs.legacyPackages.${system};
 
     name = "scannedImageExtractor";
+    version = "0.2.7-beta";
   in {
     packages.${system} = {
       default = let
@@ -72,7 +73,7 @@
           dontBuild = true;
 
           installPhase = ''
-            install -m 555 $src -D $out/${name}.AppImage
+            install -m 555 $src -D $out/${name}-v${version}.AppImage
           '';
         };
     };
@@ -80,7 +81,7 @@
     apps.${system} = {
       appImage = {
         program = "${pkgs.writeShellScript "scannedImageExtractor" ''
-          ${pkgs.appimage-run}/bin/appimage-run ${self.packages.${system}.appImage}/${name}.AppImage
+          ${pkgs.appimage-run}/bin/appimage-run ${self.packages.${system}.appImage}/${name}-v${version}.AppImage
         ''}";
         type = "app";
       };
