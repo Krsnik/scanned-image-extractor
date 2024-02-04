@@ -57,7 +57,7 @@
 
             # Install icons
             for dimension in 128 256; do
-              install -m 444 $src/scannerExtract/ico/${name}''${dimension}x''${dimension}.png -D $out/share/icons/''${dimension}x''${dimension}/apps/${name}.png
+              install -m 444 $src/scannerExtract/ico/${name}''${dimension}x''${dimension}.png -D $out/share/icons/hicolor/''${dimension}x''${dimension}/apps/${name}.png
             done
           '';
         };
