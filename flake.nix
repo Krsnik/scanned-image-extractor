@@ -87,13 +87,19 @@
       };
     };
 
-    devShells = {
+    overlays = {
+      default = final: prev: {
+        scanned-image-extractor = self.packages.${system}.default;
+      };
+    };
+
+    devShells.${system} = {
       default = pkgs.mkShellNoCC {
         packages = with pkgs; [
           cmake
           opencv3
           liblbfgs
-          gt5.full
+          qt5.full
 
           appimage-run
         ];
